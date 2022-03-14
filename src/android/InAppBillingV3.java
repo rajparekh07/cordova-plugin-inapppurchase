@@ -233,8 +233,8 @@ public class InAppBillingV3 extends CordovaPlugin {
             pluginResponse.put("orderId", purchase.getOrderId());
             pluginResponse.put("packageName", purchase.getPackageName());
             pluginResponse.put("productId", purchase.getSku());
-            pluginResponse.put("purchaseTime", purchase.getPurchaseTime());
-            pluginResponse.put("purchaseState", purchase.getPurchaseState());
+            pluginResponse.put("date", purchase.getPurchaseTime());
+            pluginResponse.put("state", purchase.getPurchaseState());
             pluginResponse.put("purchaseToken", purchase.getToken());
             pluginResponse.put("signature", purchase.getSignature());
             pluginResponse.put("type", purchase.getItemType());
